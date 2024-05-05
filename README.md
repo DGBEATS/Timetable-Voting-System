@@ -46,7 +46,11 @@ This README provides instructions on how to run the Timetable Generator website 
 
 ## Starting the local server
 
-1. Inside your IDE, create a new terminal.
+1. Change your directory into the ttss_assignment folder
+
+```bash
+   cd ttss_assignment
+```
 
 2. Start the server:
 
