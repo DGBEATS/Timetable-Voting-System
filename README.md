@@ -6,7 +6,8 @@ This README provides instructions on how to run the Timetable Generator website 
 
 ### Prerequisites
 
-1. The most up-to-date Python version must be install on your system. That can be downloaded [here](https://www.python.org/downloads/).
+1. The most up-to-date Python version must be installed on your system. That can be downloaded [here](https://www.python.org/downloads/).
+2. The most up-to-date pip or pip3 version m
 
 ### Steps
 
@@ -19,7 +20,7 @@ This README provides instructions on how to run the Timetable Generator website 
 2. Move into the directory where the files are located
 
 ```bash
-   cd ttss_assignment
+   cd Timetable-Voting-System
 ```
 
 3. Create a virtual environment:
