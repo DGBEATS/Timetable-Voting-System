@@ -25,9 +25,9 @@ This README provides instructions on how to run the Timetable Generator website 
 3. Create a virtual environment:
 
 ```bash
-   [//]: # (Install virtualenv first)
+   # (Install virtualenv first)
    pip install virtualenv
-   [//]: # (Create virtualenv)
+   # (Create virtualenv)
    virtualenv envname
 ```
 
