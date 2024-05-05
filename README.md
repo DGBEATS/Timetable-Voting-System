@@ -7,7 +7,8 @@ This README provides instructions on how to run the Timetable Generator website 
 ### Prerequisites
 
 1. The most up-to-date Python version must be installed on your system. That can be downloaded [here](https://www.python.org/downloads/).
-2. The most up-to-date pip or pip3 version m
+2. The most up-to-date pip or pip3 version.
+3. Python file/folder must have been added to PATH. (Follow terminal instructions as needed when setting up the virtual environment).
 
 ### Steps
 
