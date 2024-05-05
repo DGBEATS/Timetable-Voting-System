@@ -1,0 +1,23 @@
+{% extends 'base.html' %} {% block content %}
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+ <a class="navbar-brand" href="#">Dashboard</a>
+</nav>
+<h1 class="text-center mb-3">Questions</h1>
+
+{% for question in recent_question %}
+<div class="card border-primary mb-3 bg-dark">
+ <div class="card-body" style="width: 25rem">
+  <p class="lead text-white">{{question.question_text}}</p>
+ </div>
+
+ <a
+  href="{% url 'votes:detail' question.id %}"
+  class="btn btn-primary btn-sm mb-3"
+ >
+  Vote Now</a
+ >
+ <a href="{% url 'votes:results' question.id %}" class="btn btn-success btn-sm">
+  Results</a
+ >
+</div>
+{% endfor %} {% endblock content %}

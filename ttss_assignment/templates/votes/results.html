@@ -1,0 +1,27 @@
+{% extends 'base.html' %} {% block content %}
+<div class="container">
+ <div class="card bg-light mb-5">
+  <div class="card-body">
+   <h1 class="card-title text-primary mb-5 text-center">
+    {{ obj.question_text }}
+   </h1>
+   <ul class="list-group mb-3">
+    {% for option in obj.option_set.all %}
+    <li class="list-group-item">
+     {{ option.option_text }}
+     <span class="badge badge-success float-right">
+      {{ option.votes }} vote{{ option.votes | pluralize }}
+     </span>
+    </li>
+    {% endfor %}
+   </ul>
+   <div class="btn-group mb-3" role="group" aria-label="Button group">
+    <a href="{% url 'votes:Home' %}" class="btn btn-secondary">Back to Polls</a>
+    <a href="{% url 'votes:detail' obj.id %}" class="btn btn-dark"
+     >Vote again?</a
+    >
+   </div>
+  </div>
+ </div>
+</div>
+{% endblock content %}

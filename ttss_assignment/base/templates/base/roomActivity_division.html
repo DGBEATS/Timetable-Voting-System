@@ -1,0 +1,12 @@
+<h3>Browse Room Activities</h3>
+<hr>
+
+<div>
+    <a href="{% url 'home' %}">Refresh</a>
+</div>
+
+{% for roomActivity in roomActivitys %}
+    <div>
+        <a href="{% url 'home' %}?q={{roomActivity.name}}">{{roomActivity.name}}</a>
+    </div>
+{%  endfor %}

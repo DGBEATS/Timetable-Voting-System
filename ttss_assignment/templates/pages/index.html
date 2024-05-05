@@ -1,0 +1,11 @@
+{% extends 'base.html' %} {% block content %}
+<div class="card text-center">
+ <div class="card-body">
+  <h1>Welcome to the Voting System</h1>
+  <p class="lead d-flex justify-content-center">
+   This is a simple voting system where you can vote for your favourite sports.
+  </p>
+  <a class="btn btn-dark" href="{% url 'votes:Home' %}"> View The Polls </a>
+ </div>
+</div>
+{% endblock content %}
