@@ -6,7 +6,7 @@ from .models import Question, Option
 
 # Render the Questions
 def Home(request):
-    recent_question = Question.objects.order_by('publish_date')[:5] # order by earliest question # specify the number of the most recent questions to see
+    recent_question = Question.objects.order_by('publish_date') #[:5] # order by earliest question # specify the number of the most recent questions to see
     context = {'recent_question': recent_question}
     return render(request, 'votes/Home.html', context)
 
