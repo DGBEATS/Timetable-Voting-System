@@ -9,6 +9,7 @@ This README provides instructions on how to run the Timetable Generator website 
 1. The most up-to-date Python version must be installed on your system. That can be downloaded [here](https://www.python.org/downloads/).
 2. The most up-to-date pip or pip3 version.
 3. Python file/folder must have been added to [PATH](https://realpython.com/add-python-to-path/). (Follow terminal instructions as needed when setting up the virtual environment).
+4. Django must be installed on your computer. (Note: if you do not have this already, follow step 5, otherwise, skip it.)
 
 ### Steps
 
@@ -39,7 +40,20 @@ This README provides instructions on how to run the Timetable Generator website 
    envname\Scripts\activate
 ```
 
-5. Inside the virtual environment install django
+5. Install [Django](https://www.w3schools.com/django/django_install_django.php) inside the virtual environment:
+   Windows:
+
+```bash
+   py -m pip install Django
+```
+
+or MacOS:
+
+```bash
+   python -m pip install Django
+```
+
+6. Inside the virtual environment install django
 
 ```bash
    pip install django
