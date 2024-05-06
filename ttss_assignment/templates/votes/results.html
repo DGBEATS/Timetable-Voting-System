@@ -15,8 +15,8 @@
     </li>
     {% endfor %}
    </ul>
-   <div class="btn-group mb-3" role="group" aria-label="Button group">
-    <a href="{% url 'votes:Home' %}" class="btn btn-secondary">Back to Polls</a>
+   <div class="mb-3">
+    <a href="{% url 'votes:Home' %}" class="btn btn-info mr-3">Back to Polls</a>
     <a href="{% url 'votes:detail' obj.id %}" class="btn btn-dark"
      >Vote again?</a
     >
