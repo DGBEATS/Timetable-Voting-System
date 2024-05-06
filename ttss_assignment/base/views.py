@@ -45,7 +45,7 @@ def logoutUser(request):
 
 
 def registerPage(request):
-    form = UserCreationForm()
+    form = UserCreationForm() # uses Django's in build form for making a user
 
     if request.method == 'POST':
         form = UserCreationForm(request.POST)
