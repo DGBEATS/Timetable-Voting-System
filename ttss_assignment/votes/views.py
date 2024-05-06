@@ -35,28 +35,6 @@ def vote(request, question_id):
 
 
 
-
-
-
-    # try:
-    #     selected_option = obj.option_set.get(pk = request.POST['option'])
-    # except (KeyError, Option.DoesNotExist):
-    #     return render(request, 'votes/detail.html', context)
-    # else:
-    #     selected_option.votes += 1
-    #     selected_option.save()
-    #     return HttpResponseRedirect(reverse('votes:results', args=(question_id,))) # prevents data from being posted twice if a user goes back
-
-
-
-# def detail(request, question_id):
-#     try:
-#         question = Question.objects.get(pk = question_id)
-#     except Question.DoesNotExist:
-#         raise Http404("Question does not exist")
-#     context = {'question': question}
-#     return render(request, 'votes/detail.html', context)
-
 def detail(request, question_id):
     question = get_object_or_404(Question, pk = question_id)
     context = {'question': question}

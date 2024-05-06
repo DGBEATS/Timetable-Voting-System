@@ -12,12 +12,6 @@ from .forms import RoomForm
 
 # Create your views here. 'Views' is the request handler page
 
-# rooms = [
-#     {'id': 1, 'name': 'Lets learn Python'},
-#     {'id': 2, 'name': 'Design with me'},
-#     {'id': 3, 'name': 'Frontend developers'},
-# ]
-
 def loginPage(request):
     page = 'login_registration'
     if request.user.is_authenticated:
@@ -49,12 +43,8 @@ def logoutUser(request):
     logout(request)
     return redirect('home')
 
-    # context = {}
-    # return render(request, 'base/login_registration.html', context)
-
 
 def registerPage(request):
-    # page = 'register'
     form = UserCreationForm()
 
     if request.method == 'POST':
