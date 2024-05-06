@@ -60,3 +60,9 @@ This README provides instructions on how to run the Timetable Generator website 
 ```
 
 Then the development server will be started at http://127.0.0.1:8000/
+
+Urls:
+
+Default page - http://127.0.0.1:8000/
+Staff page - http://127.0.0.1:8000/staff
+Admin page - http://127.0.0.1:8000/admin
